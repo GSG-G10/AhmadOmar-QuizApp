@@ -85,7 +85,6 @@ body {
     top: 22px;
 }
 .right-side .leaderboard .player-card {
-    list-style-type: none;
     margin-bottom: 10px;
 }
 .right-side .leaderboard .player-card > div {
@@ -94,7 +93,6 @@ body {
     display: inline-block;
     height: 35px;
     line-height: 35px;
-
 }
 .right-side .leaderboard .player-rank {
     border-radius: 50%;
@@ -110,4 +108,50 @@ body {
 }
 .right-side .leaderboard .player-score {
     float: right;
+}
+
+/* Questions Page */
+.questions h2 {
+    font-size: 48px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-top: 0;
+}
+.answers {
+    margin-bottom: 38px;
+}
+.answers .answer {
+    margin-bottom: 12px;
+}
+.answers .answer > div {
+    background-color: var(--primary-color);
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+}
+.answers .answer .answer-number {
+    border-radius: 50%;
+    width: 60px;
+    text-align: center;
+    margin-right: 14px;
+}
+.answers .answer .answer-content {
+    width: 400px;
+    border-radius: 30px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.questions .arrow-button {
+    position: relative;
+    left: 45px;
+}
+.remaining-questions {
+    color: rgb(19 59 92 / 80%);
+    font-weight: 500;
+    font-size: 22px;
+    position: absolute;
+    right: 420px;
+    top: 90px;
 }
