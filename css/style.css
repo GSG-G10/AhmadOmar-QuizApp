@@ -44,20 +44,28 @@ body {
     margin-bottom: 60px;
     margin-top: -8px;
 }
-.arrow-button a {
+.arrow-button button {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
     font-size: 14px;
     border: 2px solid var(--primary-color);
     border-radius: 30px;
-    padding: 12px 16px;
-}
-.arrow-button a i {
-    font-size: 38px;
+    padding: 12px 50px 12px 16px;
     position: relative;
-    left: 14px;
-    top: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s
+}
+.arrow-button button:hover {
+    background-color: #133b5c;
+    color: #fff;
+}
+.arrow-button button i {
+    font-size: 38px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
 }
 .right-side {
     width: 35%;
@@ -109,6 +117,90 @@ body {
 .right-side .leaderboard .player-score {
     float: right;
 }
+.enter-your-name {
+    background-color: #133B5C;
+    width: 340px;
+    height: 230px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+    top: 35%;
+    visibility: hidden;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.enter-your-name.zoomIn {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+}
+.enter-your-name.zoomOut {
+    animation-name: zoomOut;
+    animation-duration: 1s;
+}
+.enter-your-name form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enter-your-name label {
+    display: block;
+    font-size: 20px;;
+}
+.enter-your-name input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 0;
+}
+.enter-your-name button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 6px;
+    width: 96%;
+    height: 34px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.enter-your-name button:hover {
+    background-color: #2b506f;
+}
+.exit-button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    cursor: pointer;
+}
+.exit-button i {
+    color: var(--secondary-color);
+    font-size: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+}
 
 /* Questions Page */
 .questions h2 {
@@ -142,6 +234,7 @@ body {
     border-radius: 30px;
     padding: 0 25px;
     box-sizing: border-box;
+    font-size: 18px;
 }
 .questions .arrow-button {
     position: relative;
