@@ -14,6 +14,14 @@
 
 <body>
     <section class="container">
+        <section id="name-window" class="enter-your-name">
+            <div class="exit-button" id="exit-button"><i class="fas fa-times-circle"></i></div>
+            <form>
+                <label for="your-name">Enter Your Name</label>
+                <input type="text" id="your-name" name="name" />
+                <button id="start-quiz">Start</button>
+            </form>
+        </section>
         <section class="main-card">
             <section class="left-side">
                 <section class="left-content">
@@ -27,7 +35,7 @@
                         nunc.
                         Donec at sollicitudin risus.</p>
                     <div class="arrow-button">
-                        <a href="#">Let's Take a Quiz <i class="fas fa-arrow-circle-right"></i></a>
+                        <button id="go-to-quiz">Let's Take a Quiz <i class="fas fa-arrow-circle-right"></i></button>
                     </div>
                 </section>
             </section>
@@ -61,7 +69,9 @@
                     <img src="images/Quiz.svg" alt="QuestionMark">
                 </section>
             </section>
+
         </section>
+
     </section>
     <script src="js/index.js"></script>
 </body>
